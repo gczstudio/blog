@@ -45,17 +45,35 @@
   
 
   
+    
+      
+    
 
-  
-
+    
   
 
   
 
   
     
+      
     
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Manda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   
 
 
@@ -247,7 +265,7 @@
               
                 
                 <a class="post-title-link" href="/2016/11/04/my-new-post/" itemprop="url">
-                  my new post
+                  面向对象知识点
                 </a>
               
             
@@ -265,6 +283,25 @@
             </time>
           </span>
 
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
           
 
           
@@ -289,9 +326,72 @@
 
       
         
-          
-            <h1 id="关于如何创建hexo"><a href="#关于如何创建hexo" class="headerlink" title="关于如何创建hexo"></a>关于如何创建hexo</h1>
-          
+          <h2 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h2><h3 id="JavaScript包含三大部分"><a href="#JavaScript包含三大部分" class="headerlink" title="JavaScript包含三大部分"></a>JavaScript包含三大部分</h3><ul>
+<li>ECMAScript：规定js的语法规范</li>
+<li>document object model 给我们提了了一套完整的操作页面元素的api</li>
+<li>BOM:操作浏览器的api</li>
+</ul>
+<h3 id="Javascript的数据类型"><a href="#Javascript的数据类型" class="headerlink" title="Javascript的数据类型"></a>Javascript的数据类型</h3><ul>
+<li>基本数据类型<br>  number,string,boolean,undefined</li>
+<li>复杂数量类型<br>  Array,String,Object,Math,Date,Boolean,Number,RegExp,Function<blockquote>
+<p>获取一个数据的数据类型<br>  使用关键字typeof<br>两个空的类型<br>  null<br>  undefined<br>  null==undefined<br>  undefined和任何数计算都是NaN<br>  null参与计算时,为0<br>  变量不可能为null值,除非手动设置<br>  要解除对象的占用（引用）的时候,才给对象赋值为null;</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="全等和等于的区别"><a href="#全等和等于的区别" class="headerlink" title="全等和等于的区别"></a>全等和等于的区别</h3><ul>
+<li>全等比较值和数据类型</li>
+<li>相等只比较值不比较数据类型</li>
+</ul>
+<h3 id="in关键字"><a href="#in关键字" class="headerlink" title="in关键字"></a>in关键字</h3><ol>
+<li>常用于for…in循环遍历对象的键</li>
+<li>判断属性是否存在于对象中<br> 语法: 属性 in 对象 对象的键为字符串类型<br> 注意：使用in关键字的时候,属性名称为字符串类型,需要用引号括起来<br> in关键字操作数组的时候判断的是索引是否存在，而不是值</li>
+</ol>
+<h3 id="如何判断数组中是否存在指定的值"><a href="#如何判断数组中是否存在指定的值" class="headerlink" title="如何判断数组中是否存在指定的值"></a>如何判断数组中是否存在指定的值</h3><ol>
+<li>for循环,如果找到了就输出</li>
+<li>indexOf,找到了就返回索引值,如果没有找到,就返回-1</li>
+</ol>
+<h3 id="值类型和引用类型"><a href="#值类型和引用类型" class="headerlink" title="值类型和引用类型"></a>值类型和引用类型</h3><ol>
+<li>值类型:存储的就是数据本身的变量就是值类型的数据</li>
+<li>引用类型：存储的是数据在内存中的地址,数据在内存中单独存储</li>
+</ol>
+<h3 id="值类型和引用类型的特征"><a href="#值类型和引用类型的特征" class="headerlink" title="值类型和引用类型的特征"></a>值类型和引用类型的特征</h3><ol>
+<li>值类型的赋值:<br>直接将存储的数据复制一份进行赋值,两份数据在内存中是完全独立的</li>
+<li>引用类型赋值:<br>将变量中存储的地址复制一份单独存储,但是两个变量共享同一个对象<br>修改其中一个对象,另外一个对象来访问的时候,也会访问到修改后的对象</li>
+</ol>
+<h3 id="引用类型和值类型在函数中的使用"><a href="#引用类型和值类型在函数中的使用" class="headerlink" title="引用类型和值类型在函数中的使用"></a>引用类型和值类型在函数中的使用</h3><ol>
+<li>实参:就是函数调用的时候,实际传入的参数</li>
+<li>形参:函数声明的时候,用来占位的变量名,没有具体的数值</li>
+<li>在函数调用的时候,会默认的将实参赋值给形参</li>
+<li>值类型做函数的参数<br>函数内部的变量，也就是形参和实参只是简单的赋值操作，两个数据独立存储于内存中的<br>在函数内部对形参进行修改，不会影响外面的变量</li>
+<li>引用类型做函数的参数<br> 把实参存储的地址赋值给了形参,在函数的内部,形参同样也指向该对象<br> 所以,在函数内部对该对象进行修改,会影响到外面的变量<br> 注意:如果函数内部重新创建对象,为该形参赋值,那么两个对象不再有关系,修改其中一个对象,另外一个对象不受影响    </li>
+</ol>
+<h3 id="对象的动态特性"><a href="#对象的动态特性" class="headerlink" title="对象的动态特性"></a>对象的动态特性</h3><p>对象的动态特性是值在对象创建出来之后,为对象动态添加新的属性和方法<br>新增属性,方法的方式有:</p>
+<ol>
+<li>点语法</li>
+<li>通过[]的形式去添加</li>
+</ol>
+<h3 id="逻辑中断-短路运算"><a href="#逻辑中断-短路运算" class="headerlink" title="逻辑中断(短路运算)"></a>逻辑中断(短路运算)</h3><ol>
+<li><p>表达式1 || 表达式2<br> 如果表达式1为真,返回表达式1<br> 如果表达式1为假,返回表达式2</p>
+</li>
+<li><p>表达式1 &amp;&amp; 表达式2<br> 如果表达式1为真,返回表达式2<br> 如果表达式1为假,返回表达式1</p>
+</li>
+</ol>
+<h3 id="delete关键字"><a href="#delete关键字" class="headerlink" title="delete关键字"></a>delete关键字</h3><ol>
+<li>delete关键字可以用来删除对象的属性,和未使用var声明的变量</li>
+<li>delete关键字有返回值,用来表示删除属性是否成功<br> 如果删除的是不存在的属性，返回值为false<br> 如果删除的属性存在原型当中,那么返回值为true,但是并未删除</li>
+</ol>
+<h3 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h3><ol>
+<li><p>异常最大的特征，就是一旦出现异常，后面的代码将不会再执行<br> 那为了保证后面代码在出现异常之后，还能继续执行，所以就要进行异常处理</p>
+<p> 注意:语法异常,try catch无法捕获</p>
+</li>
+<li>异常捕获语句</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">try&#123;</div><div class="line">	//可能会出现问题的代码</div><div class="line"></div><div class="line">	throw关键字</div><div class="line">	手动抛出异常信息</div><div class="line">&#125;</div><div class="line">catch(e)&#123;</div><div class="line"></div><div class="line">	//e是出现的异常</div><div class="line">	//出现异常后的处理代码</div><div class="line">&#125;</div><div class="line">finally&#123;</div><div class="line">	</div><div class="line">	//不管有没有出现异常，这里的代码都会执行</div><div class="line">	//node.js</div><div class="line">	//做释放资源的操作。</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/11/04/my-new-post/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -351,7 +451,7 @@
       <section class="site-overview sidebar-panel  sidebar-panel-active ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="https://avatars3.githubusercontent.com/u/23217153?v=3&s=466"
+               src="/images/tx.jpg"
                alt="gcz" />
           <p class="site-author-name" itemprop="name">gcz</p>
           <p class="site-description motion-element" itemprop="description"></p>
@@ -365,7 +465,21 @@
           </div>
 
           
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
 
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
           
 
         </nav>
@@ -381,6 +495,24 @@
                     <i class="fa fa-fw fa-github"></i>
                   
                   GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
                 </a>
               </span>
             

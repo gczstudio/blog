@@ -45,17 +45,35 @@
   
 
   
+    
+      
+    
 
-  
-
+    
   
 
   
 
   
     
+      
     
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Manda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   
 
 
@@ -68,7 +86,7 @@
 <link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="itmebk,web,javascript,html,css,node.js,ajax" />
+  <meta name="keywords" content="JavaScript,面向对象,Function," />
 
 
 
@@ -84,16 +102,37 @@
 
 
 
-<meta name="description" content="关于如何创建hexo">
+<meta name="description" content="JavaScriptJavaScript包含三大部分
+ECMAScript：规定js的语法规范
+document object model 给我们提了了一套完整的操作页面元素的api
+BOM:操作浏览器的api
+
+Javascript的数据类型
+基本数据类型  number,string,boolean,undefined
+复杂数量类型  Array,String,Object,Math,Date">
 <meta property="og:type" content="article">
-<meta property="og:title" content="my new post">
+<meta property="og:title" content="面向对象知识点">
 <meta property="og:url" content="http://yoursite.com/2016/11/04/my-new-post/index.html">
 <meta property="og:site_name" content="itmebk">
-<meta property="og:description" content="关于如何创建hexo">
-<meta property="og:updated_time" content="2016-11-04T13:56:27.975Z">
+<meta property="og:description" content="JavaScriptJavaScript包含三大部分
+ECMAScript：规定js的语法规范
+document object model 给我们提了了一套完整的操作页面元素的api
+BOM:操作浏览器的api
+
+Javascript的数据类型
+基本数据类型  number,string,boolean,undefined
+复杂数量类型  Array,String,Object,Math,Date">
+<meta property="og:updated_time" content="2016-11-07T14:25:06.291Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="my new post">
-<meta name="twitter:description" content="关于如何创建hexo">
+<meta name="twitter:title" content="面向对象知识点">
+<meta name="twitter:description" content="JavaScriptJavaScript包含三大部分
+ECMAScript：规定js的语法规范
+document object model 给我们提了了一套完整的操作页面元素的api
+BOM:操作浏览器的api
+
+Javascript的数据类型
+基本数据类型  number,string,boolean,undefined
+复杂数量类型  Array,String,Object,Math,Date">
 
 
 
@@ -117,7 +156,7 @@
   <link rel="canonical" href="http://yoursite.com/2016/11/04/my-new-post/"/>
 
 
-  <title> my new post | itmebk </title>
+  <title> 面向对象知识点 | itmebk </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
@@ -247,7 +286,7 @@
             
             
               
-                my new post
+                面向对象知识点
               
             
           </h1>
@@ -264,6 +303,25 @@
             </time>
           </span>
 
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
           
 
           
@@ -287,7 +345,360 @@
       
 
       
-        <h1 id="关于如何创建hexo"><a href="#关于如何创建hexo" class="headerlink" title="关于如何创建hexo"></a>关于如何创建hexo</h1>
+        <h2 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h2><h3 id="JavaScript包含三大部分"><a href="#JavaScript包含三大部分" class="headerlink" title="JavaScript包含三大部分"></a>JavaScript包含三大部分</h3><ul>
+<li>ECMAScript：规定js的语法规范</li>
+<li>document object model 给我们提了了一套完整的操作页面元素的api</li>
+<li>BOM:操作浏览器的api</li>
+</ul>
+<h3 id="Javascript的数据类型"><a href="#Javascript的数据类型" class="headerlink" title="Javascript的数据类型"></a>Javascript的数据类型</h3><ul>
+<li>基本数据类型<br>  number,string,boolean,undefined</li>
+<li>复杂数量类型<br>  Array,String,Object,Math,Date,Boolean,Number,RegExp,Function<blockquote>
+<p>获取一个数据的数据类型<br>  使用关键字typeof<br>两个空的类型<br>  null<br>  undefined<br>  null==undefined<br>  undefined和任何数计算都是NaN<br>  null参与计算时,为0<br>  变量不可能为null值,除非手动设置<br>  要解除对象的占用（引用）的时候,才给对象赋值为null;</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="全等和等于的区别"><a href="#全等和等于的区别" class="headerlink" title="全等和等于的区别"></a>全等和等于的区别</h3><ul>
+<li>全等比较值和数据类型</li>
+<li>相等只比较值不比较数据类型</li>
+</ul>
+<h3 id="in关键字"><a href="#in关键字" class="headerlink" title="in关键字"></a>in关键字</h3><ol>
+<li>常用于for…in循环遍历对象的键</li>
+<li>判断属性是否存在于对象中<br> 语法: 属性 in 对象 对象的键为字符串类型<br> 注意：使用in关键字的时候,属性名称为字符串类型,需要用引号括起来<br> in关键字操作数组的时候判断的是索引是否存在，而不是值</li>
+</ol>
+<h3 id="如何判断数组中是否存在指定的值"><a href="#如何判断数组中是否存在指定的值" class="headerlink" title="如何判断数组中是否存在指定的值"></a>如何判断数组中是否存在指定的值</h3><ol>
+<li>for循环,如果找到了就输出</li>
+<li>indexOf,找到了就返回索引值,如果没有找到,就返回-1</li>
+</ol>
+<h3 id="值类型和引用类型"><a href="#值类型和引用类型" class="headerlink" title="值类型和引用类型"></a>值类型和引用类型</h3><ol>
+<li>值类型:存储的就是数据本身的变量就是值类型的数据</li>
+<li>引用类型：存储的是数据在内存中的地址,数据在内存中单独存储</li>
+</ol>
+<h3 id="值类型和引用类型的特征"><a href="#值类型和引用类型的特征" class="headerlink" title="值类型和引用类型的特征"></a>值类型和引用类型的特征</h3><ol>
+<li>值类型的赋值:<br>直接将存储的数据复制一份进行赋值,两份数据在内存中是完全独立的</li>
+<li>引用类型赋值:<br>将变量中存储的地址复制一份单独存储,但是两个变量共享同一个对象<br>修改其中一个对象,另外一个对象来访问的时候,也会访问到修改后的对象</li>
+</ol>
+<h3 id="引用类型和值类型在函数中的使用"><a href="#引用类型和值类型在函数中的使用" class="headerlink" title="引用类型和值类型在函数中的使用"></a>引用类型和值类型在函数中的使用</h3><ol>
+<li>实参:就是函数调用的时候,实际传入的参数</li>
+<li>形参:函数声明的时候,用来占位的变量名,没有具体的数值</li>
+<li>在函数调用的时候,会默认的将实参赋值给形参</li>
+<li>值类型做函数的参数<br>函数内部的变量，也就是形参和实参只是简单的赋值操作，两个数据独立存储于内存中的<br>在函数内部对形参进行修改，不会影响外面的变量</li>
+<li>引用类型做函数的参数<br> 把实参存储的地址赋值给了形参,在函数的内部,形参同样也指向该对象<br> 所以,在函数内部对该对象进行修改,会影响到外面的变量<br> 注意:如果函数内部重新创建对象,为该形参赋值,那么两个对象不再有关系,修改其中一个对象,另外一个对象不受影响    </li>
+</ol>
+<h3 id="对象的动态特性"><a href="#对象的动态特性" class="headerlink" title="对象的动态特性"></a>对象的动态特性</h3><p>对象的动态特性是值在对象创建出来之后,为对象动态添加新的属性和方法<br>新增属性,方法的方式有:</p>
+<ol>
+<li>点语法</li>
+<li>通过[]的形式去添加</li>
+</ol>
+<h3 id="逻辑中断-短路运算"><a href="#逻辑中断-短路运算" class="headerlink" title="逻辑中断(短路运算)"></a>逻辑中断(短路运算)</h3><ol>
+<li><p>表达式1 || 表达式2<br> 如果表达式1为真,返回表达式1<br> 如果表达式1为假,返回表达式2</p>
+</li>
+<li><p>表达式1 &amp;&amp; 表达式2<br> 如果表达式1为真,返回表达式2<br> 如果表达式1为假,返回表达式1</p>
+</li>
+</ol>
+<h3 id="delete关键字"><a href="#delete关键字" class="headerlink" title="delete关键字"></a>delete关键字</h3><ol>
+<li>delete关键字可以用来删除对象的属性,和未使用var声明的变量</li>
+<li>delete关键字有返回值,用来表示删除属性是否成功<br> 如果删除的是不存在的属性，返回值为false<br> 如果删除的属性存在原型当中,那么返回值为true,但是并未删除</li>
+</ol>
+<h3 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h3><ol>
+<li><p>异常最大的特征，就是一旦出现异常，后面的代码将不会再执行<br> 那为了保证后面代码在出现异常之后，还能继续执行，所以就要进行异常处理</p>
+<p> 注意:语法异常,try catch无法捕获</p>
+</li>
+<li>异常捕获语句</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">try&#123;</div><div class="line">	//可能会出现问题的代码</div><div class="line"></div><div class="line">	throw关键字</div><div class="line">	手动抛出异常信息</div><div class="line">&#125;</div><div class="line">catch(e)&#123;</div><div class="line"></div><div class="line">	//e是出现的异常</div><div class="line">	//出现异常后的处理代码</div><div class="line">&#125;</div><div class="line">finally&#123;</div><div class="line">	</div><div class="line">	//不管有没有出现异常，这里的代码都会执行</div><div class="line">	//node.js</div><div class="line">	//做释放资源的操作。</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<h3 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h3><ol>
+<li>面向对象是一种思维方式,把解决问题的关注点,放到解决问题需要的一系列对象上</li>
+<li>面向过程就是把解决问题的关注点,放到解决问题的每一个详细步骤上面</li>
+<li>面对对象是对面向过程的封装</li>
+</ol>
+<h3 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h3><ol>
+<li>万物皆对象    </li>
+<li>JS中的对象是键值对的无序集合</li>
+<li>名词提炼法,特征对应属性,行为对应方法</li>
+</ol>
+<h3 id="函数封装"><a href="#函数封装" class="headerlink" title="函数封装"></a>函数封装</h3><ol>
+<li>使用函数将代码封装,使得复用性更高</li>
+<li>使用函数封装带来的问题:<br> 全局变量污染<br> 代码结构不够清晰,维护不方便<br> 对象封装:<br> 使用对象进行封装后的优势:<br> 1.暴露在全局的只有一个对象名<br> 2.使用对象将代码进行功能模块划分,有利于日后的维护</li>
+</ol>
+<h2 id="面向对象-1"><a href="#面向对象-1" class="headerlink" title="面向对象"></a>面向对象</h2><h3 id="面向对象的三大特性"><a href="#面向对象的三大特性" class="headerlink" title="面向对象的三大特性"></a>面向对象的三大特性</h3><p>封装<br>继承:一个对象没有一些方法和属性，但是另外一个对象有<br>多态:使用父类的引用(指针)指向子类的对象(是在强类型语言中比较常用,JavaSC中没有相应的体现)</p>
+<h3 id="创建对象的方式"><a href="#创建对象的方式" class="headerlink" title="创建对象的方式"></a>创建对象的方式</h3><ol>
+<li>对象字面量 var obj={};<br> 只能创建一次对象，复用性较差，如果要创建多个对象，代码冗余度太高<br> }</li>
+<li>使用内置的构造函数 var obj=new Object({});</li>
+<li><p>封装简单的工厂函数(不推荐使用了)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">function createObject()&#123;</div><div class="line">	var  o=new Obeject();</div><div class="line">	o.name=&quot;hhh&quot;;</div><div class="line">	o.age=&quot;xxx&quot;;</div><div class="line">	o.sayhello=function()&#123;&#125;;</div><div class="line">	return o;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p> 4.自定义构造函数</p>
+</li>
+</ol>
+<h3 id="自定义构造函数"><a href="#自定义构造函数" class="headerlink" title="自定义构造函数"></a>自定义构造函数</h3><ol>
+<li>构造函数其实也是函数,但是通常用来初始化对象,并且和new关键字同时出现</li>
+<li>new是用来创建对象的.</li>
+<li>构造函数名,首字母要大写!!!以示区分</li>
+</ol>
+<h3 id="构造函数的执行过程"><a href="#构造函数的执行过程" class="headerlink" title="构造函数的执行过程"></a>构造函数的执行过程</h3><ol>
+<li>使用new关键字创建对象</li>
+<li>调用构造函数,把新创建出来的对象赋值给构造函数内的this</li>
+<li>在构造函数内部使用this为新创建出来的对象新增成员</li>
+<li>默认返回新创建的对象(普通的函数,如果不写返回语句,会返回undefine)</li>
+</ol>
+<h3 id="构造函数的返回值"><a href="#构造函数的返回值" class="headerlink" title="构造函数的返回值"></a>构造函数的返回值</h3><ol>
+<li>如果不写返回值,默认返回的是新创建出来的对象(一般都不会去写这个return语句)</li>
+<li>如果我们自己写return语句,return的是空值,或者是基本类型的值或者null,都会返回新创建出来的对象</li>
+<li>如果返回的是引用类型的值,将不会返回刚才新创建的对象,取而代之的是return后面的值    </li>
+</ol>
+<h3 id="传统构造函数存在的问题"><a href="#传统构造函数存在的问题" class="headerlink" title="传统构造函数存在的问题"></a>传统构造函数存在的问题</h3><p>注意:如果构造函数没有参数,那么在调用的时候,小括号可以省略</p>
+<ol>
+<li>如果在构造函数中定义函数,那么每次创建对象,都会重新创建该函数,但是内部代码完全相同,就造成了资源浪费.</li>
+<li>为了解决这个问题,我们让所有的对象共用一个方法,在构造函数外部定义好该函数，将该函数赋值给构造函数内的方法</li>
+<li>使用这种方式存在的问题<br> 全局变量增多,造成污染<br> 代码结构混乱,不要维护</li>
+</ol>
+<h3 id="原型"><a href="#原型" class="headerlink" title="原型"></a>原型</h3><p>在构造函数创建出来的时候，系统会默认的帮构造函数创建并关联一个对象，这个对象就是原型<br>原型默认是一个空的对象</p>
+<h4 id="原型的作用"><a href="#原型的作用" class="headerlink" title="原型的作用"></a>原型的作用</h4><pre><code>原型中的属性和方法,可以被使用该构造函数创建出来的对象使用
+</code></pre><h4 id="访问构造函数的原型"><a href="#访问构造函数的原型" class="headerlink" title="访问构造函数的原型"></a>访问构造函数的原型</h4><ol>
+<li>通过构造函数访问 .prototype</li>
+<li>通过对象访问 .<strong>proto</strong>(非标准属性,为了保证通用性,这个属性不推荐使用,主要用来做调试)        </li>
+</ol>
+<p>注意:prototype是构造函数的属性，跟对象没有关系(还有一个name属性)<br><strong>proto</strong>和constructor是原型的属性</p>
+<h4 id="使用原型解决传统构造函数存在的问题"><a href="#使用原型解决传统构造函数存在的问题" class="headerlink" title="使用原型解决传统构造函数存在的问题"></a>使用原型解决传统构造函数存在的问题</h4><pre><code>实例化:通过构造函数创建对象的过程就叫做实例化
+实例:通过构造函数实例化出来的对象就是该构造函数的一个实例
+</code></pre><h4 id="原型的使用方法"><a href="#原型的使用方法" class="headerlink" title="原型的使用方法"></a>原型的使用方法</h4><ol>
+<li>利用对象的动态特性给原型对象添加成员</li>
+<li>直接替换原型对象<br>注意:使用新的对象替换掉默认的原型对象之后,原型对象中的constructor属性会变成Object,<br>为了保证整个构造函数–&gt;原型–&gt;对象之间关系的合理性,在新的原型对象中手动添加constructor属性</li>
+</ol>
+<h4 id="原型使用的注意事项"><a href="#原型使用的注意事项" class="headerlink" title="原型使用的注意事项"></a>原型使用的注意事项</h4><ol>
+<li>使用对象访问属性的时候,如果在本身内找不到就会去原型中查找<br> 但是使用点语法进行属性赋值的时候,并不会去原型中进行查找<br> 使用呢点语法赋值的时候如果对象中不存在该属性,就会给该对象新增该属性,而不会去修改原型中的属性</li>
+<li>如果在原型中的属性是引用类型的属性<br> 那么所有的对象共享该属性,并且一个对象修改了该引用类型属性中的成员,其他对象也都会受影响</li>
+<li>一般情况下不会将属性放到原型对象中,只会放需要共享的方法</li>
+</ol>
+<h3 id="继承的实现方式"><a href="#继承的实现方式" class="headerlink" title="继承的实现方式"></a>继承的实现方式</h3><ol>
+<li>混入式继承 for…in</li>
+<li>原型继承:<ul>
+<li>通过对象的动态特性给原型对象添加成员</li>
+<li>直接替换原型对象</li>
+<li>利用混入的方式给原型对象添加成员</li>
+</ul>
+</li>
+<li>经典继承</li>
+</ol>
+<h4 id="原型继承"><a href="#原型继承" class="headerlink" title="原型继承"></a>原型继承</h4><p>(利用原型中的成员可以被和其相关的对象共享这一特性，可以实现继承,<br>这种实现继承的方式，就叫做原型继承)</p>
+<p>通过修改原型链结构实现的继承，就叫做原型继承</p>
+<h4 id="经典继承"><a href="#经典继承" class="headerlink" title="经典继承"></a>经典继承</h4><ul>
+<li>语法:Object.create(obj);</li>
+<li>返回值为一个对象,继承自参数中的obj</li>
+<li>这个方法是ES5中出来的，所以存在兼容性问题</li>
+<li>解决兼容问题</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">1.检测浏览器的能力，如果没有Object.create方法就给他添加一个（不推荐使用）</div><div class="line"></div><div class="line">if(Object.create)&#123;</div><div class="line">	var o=Object.create(obj);</div><div class="line">&#125;else&#123;</div><div class="line">	Object.create=function(obj)&#123;</div><div class="line">	function F()&#123;&#125;;</div><div class="line">	F.prototype=obj;</div><div class="line">	var o=new F();</div><div class="line">	return o;</div><div class="line">	&#125;</div><div class="line">	var o=Object.create(obj);</div><div class="line">&#125;</div><div class="line"></div><div class="line">2.自己定义个函数</div><div class="line">function create(obj)&#123;</div><div class="line">	if(Object.create)&#123;</div><div class="line">	return Obeject.create(obj);</div><div class="line">	&#125;else&#123;</div><div class="line">		function F()&#123;&#125;;</div><div class="line">		F.prototype=obj;</div><div class="line">		return new F();</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="原型链结构"><a href="#原型链结构" class="headerlink" title="原型链结构"></a>原型链结构</h3><ol>
+<li>什么是原型链?<br> 每个构造函数都有原型对象<br> 每个对象都会有构造函数<br> 每个构造函数的原型都是一个对象<br> 那么这个原型对象也会有构造函数<br> 那么这个原型对象的构造函数也会有原型对象<br> 这样就会形成一个链式的结构，称为原型链</li>
+</ol>
+<h4 id="属性搜索原则："><a href="#属性搜索原则：" class="headerlink" title="属性搜索原则："></a>属性搜索原则：</h4><ol>
+<li>当访问一个对象的成员的时候,会先在自身找有没有,如果找到直接使用</li>
+<li>如果没有找到,则去当前对象的原型对象中去查找,如果找到了就直接使用</li>
+<li>如果没有找到,继续找原型对象的原型对象,如果找到,直接使用</li>
+<li>如果没有找到,就继续向上查找,直到Object.prototype,如果没有,就报错</li>
+</ol>
+<h3 id="Object-prototype的成员"><a href="#Object-prototype的成员" class="headerlink" title="Object.prototype的成员"></a>Object.prototype的成员</h3><ol>
+<li>constructor<br> 原型对象中的一个属性,指向该原型对象相关联的构造函数</li>
+<li>hasOwnProperty()<br> 一个方法,用来判断对象本身(不包含原型)是否拥有某个属性</li>
+<li>propertyisEnumerable()<br> 先判断属性是否属于对象本身,然后判断属性是否可以被遍历</li>
+<li>Object.defineProperty();<br> 使用以上方法添加属性的时候,可以附加一些信息</li>
+<li>toString和toLocalString        <ul>
+<li>都是转换为字符串</li>
+<li>toString是通用的 toLocalString是本地的</li>
+</ul>
+</li>
+<li>valueOf<br> 获取当前对象的值<br> 在对象参与运行的时候:<ul>
+<li>默认的会先去调用对象的valueOf方法</li>
+<li>如果valueOf获取到的值,无法进行运算,就去调用原型对象的toString方法,最终做的就是字符串拼接的工作</li>
+</ul>
+</li>
+<li><strong>proto</strong><ul>
+<li>原型对象中的属性</li>
+<li>可以使用 对象.<strong>proto</strong>去访问原型<h2 id="Function"><a href="#Function" class="headerlink" title="Function"></a>Function</h2></li>
+</ul>
+</li>
+</ol>
+<h3 id="创建函数的几种方式"><a href="#创建函数的几种方式" class="headerlink" title="创建函数的几种方式"></a>创建函数的几种方式</h3><ol>
+<li>直接声明函数</li>
+<li>函数表达式</li>
+<li>new Function</li>
+</ol>
+<h3 id="Function的使用"><a href="#Function的使用" class="headerlink" title="Function的使用"></a>Function的使用</h3><ol>
+<li>用来新建函数对象</li>
+<li>语法:<ul>
+<li>一个参数都不传的情况创建的就是一个空的函数</li>
+<li>只传一个参数的情况,这个参数就是函数体</li>
+<li>传多个参数的情况,最后一个参数为函数体,前面的参数都是该函数的形参名</li>
+</ul>
+</li>
+<li>如何解决使用Funciton创建函数时，代码过长的问题<ul>
+<li>可以使用字符串拼接让代码换行</li>
+<li>使用模板的方式,将代码写在模板标签内,获取该标签的内容</li>
+<li>使用反引号(`)引住字符串,那么就可以换行了</li>
+</ul>
+</li>
+</ol>
+<h3 id="arguments的使用"><a href="#arguments的使用" class="headerlink" title="arguments的使用"></a>arguments的使用</h3><p>函数内部的一个对象<br>当函数调用的时候，系统会将所有传入的实参，依次存入这个数组对象</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">//使用Function创建一个函数,实现数组去重</div><div class="line">var fn=new Function(`</div><div class="line">		var  newArr=[];</div><div class="line">		for(var i=0;i&lt;arguments.length;i++)&#123;</div><div class="line">			if(newArr.indexOf(arguments[i])!==-1)&#123;</div><div class="line">				newArr.push(arguments[i]);</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">		return newArr;</div><div class="line">	`);</div></pre></td></tr></table></figure>
+<h3 id="eval-不推荐使用"><a href="#eval-不推荐使用" class="headerlink" title="eval(不推荐使用)"></a>eval(不推荐使用)</h3><ol>
+<li>eval函数可以用来将字符串转换为JavaScript代码并且运行</li>
+<li>JSON格式的数据,JSON对象有兼容性问题</li>
+<li>使用eval来解析JSON格式字符串的时候,会将{}解析为代码块,而不是对象字面量<br> 解决办法:<ul>
+<li>在JSON格式的字符串前面拼接上”var o= “</li>
+<li>把JSON格式的字符串使用()括起来,就不会将{}解析为代码块,而是表达式</li>
+</ul>
+</li>
+</ol>
+<h3 id="静态成员和实例成员"><a href="#静态成员和实例成员" class="headerlink" title="静态成员和实例成员"></a>静态成员和实例成员</h3><ol>
+<li>静态成员和实例成员的概念是从其它编程语言中引入的</li>
+<li>静态成员:是指构造函数的属性和方法</li>
+<li>实例成员:是指实例的属性和方法</li>
+</ol>
+<h3 id="instanceof-关键字"><a href="#instanceof-关键字" class="headerlink" title="instanceof 关键字"></a>instanceof 关键字</h3><p>语法: 对象 instanceof 构造函数<br>判断该构造函数的原型是否存在于该对象的原型链上</p>
+<h3 id="Function的原型链"><a href="#Function的原型链" class="headerlink" title="Function的原型链"></a>Function的原型链</h3><ul>
+<li>Function也可以被当做一个构造函数</li>
+<li>通过Function new出来函数可以被当做是实例化的对象</li>
+<li>那么Function这个构造函数也有原型对象</li>
+<li>Function的原型对象是一个空的函数</li>
+<li>Function的原型对象的原型对象是Object.prototype</li>
+</ul>
+<h3 id="Object和Function的关系"><a href="#Object和Function的关系" class="headerlink" title="Object和Function的关系"></a>Object和Function的关系</h3><ul>
+<li>Object的构造函数是通过Function构造函数实例化出来的</li>
+<li>Function构造函数也是通过Function构造函数实例化出来的</li>
+</ul>
+<h3 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h3><ul>
+<li>在函数内部自己调用自己,就是递归</li>
+<li>没有递归结束条件的递归，就是死递归</li>
+<li><p>使用递归的方法<br>  化归思想：<br>  将一个问题由难化易，由繁化简，由复杂化简单的过程称为化归，它是转化和归结的简称。</p>
+<pre><code>//1到100的和
+function sum(n){
+    if(n==1){
+        return 1;
+    }
+    return sum(n-1)+n;
+}
+//斐波那契
+function fib(n){
+    if(n&lt;=2){
+        return 1;
+    }
+    return fib(n-2)+fib(n-1)
+}
+</code></pre></li>
+</ul>
+<h3 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h3><h4 id="变量起作用的范围就是变量的作用域"><a href="#变量起作用的范围就是变量的作用域" class="headerlink" title="变量起作用的范围就是变量的作用域"></a>变量起作用的范围就是变量的作用域</h4><ol>
+<li>块级作用域<br> JavaScript中没有块级作用域</li>
+<li>词法作用域<br> 就是在代码写好的那一刻，变量的作用域就已经确定了，这种作用域，就是所谓的词法作用域<br> 和词法作用域相对的叫动态作用域</li>
+<li>在JavaScript中唯一能产生作用域的东西是函数</li>
+<li>词法作用域的规则</li>
+</ol>
+<ul>
+<li>函数允许访问函数外的数据</li>
+<li>整个代码结构中只有函数可以限定作用域</li>
+<li>作用域规则首先使用提升规则分析</li>
+<li>如果当前作用域中有了该变量,就不考虑外面的同名变量</li>
+</ul>
+<h3 id="变量函数名提升"><a href="#变量函数名提升" class="headerlink" title="变量函数名提升"></a>变量函数名提升</h3><h4 id="js代码的执行分为两个步骤"><a href="#js代码的执行分为两个步骤" class="headerlink" title="js代码的执行分为两个步骤"></a>js代码的执行分为两个步骤</h4><ol>
+<li>预解析<br> 提升(JavaScript代码在预解析阶段，会对以var声明的变量名，<br> 和function开头的语句块，进行提升操作)</li>
+<li><p>执行</p>
+<p> 函数同名:都提升,后面函数覆盖前面函数<br> 函数和变量同名:只提升函数,变量会被忽略</p>
+</li>
+<li><p>变量的提升是分作用域的</p>
+<p> 注意点:<br> 1.设置值的时候,也是访问变量<br> 2.获取值的时候,是访问变量<br> 3.并不是在函数内部写了这个变量,这个变量就属于这个函数的作用域,而是必须使用var来声明变量，<br> 这个变量才会属于这个作用域<br> 4.函数在声明出来的时候,里面的代码不会执行,只有在调用的时候,代码才会执行<br> 5.声明函数是的函数名,其实也是一个变量名,可以通过这个变量名给其赋值 </p>
+</li>
+</ol>
+<h3 id="作用域链"><a href="#作用域链" class="headerlink" title="作用域链"></a>作用域链</h3><p>只要是函数就可以创造作用域<br>函数中又可以再创建函数<br>函数内部的作用域可以访问函数外部的作用域<br>如果有多个函数嵌套，那么就会构成一个链式访问结构，这就是作用域链</p>
+<h3 id="变量的搜索原则"><a href="#变量的搜索原则" class="headerlink" title="变量的搜索原则"></a>变量的搜索原则</h3><ol>
+<li>在使用变量的时候<ul>
+<li>首先在所在的作用域中查找,如果找到了就直接使用</li>
+<li>如果没有找到就去上级作用域中查找</li>
+</ul>
+</li>
+<li>重复以上步骤<ul>
+<li>如果知道0级作用域链也就是全局作用域还没有找到,就报错</li>
+</ul>
+</li>
+</ol>
+<h3 id="闭包"><a href="#闭包" class="headerlink" title="闭包"></a>闭包</h3><ul>
+<li>一个具有封闭的对外不公开的包裹结构或空间</li>
+<li>js中的闭包就是函数</li>
+<li>闭包的原理就是作用域访问原则</li>
+<li>上级作用域无法直接访问下级作用域中的变量</li>
+<li>闭包要解决的问题<br>  1.闭包内的数据不允许外界访问<br>  2.要解决的问题就是间接访问该数据</li>
+<li>闭包的基本模式<br>  在外部函数内创建函数,在这个内部函数中,可以操作外部函数中的数据<br>  将外部函数的返回值设置为内部函数,在外部调用外部函数,就可以接受到返回值(内部函数)<br>  使用这个内部函数,就可以再外部对内部函数里的变量进行修改</li>
+</ul>
+<h3 id="闭包的作用"><a href="#闭包的作用" class="headerlink" title="闭包的作用"></a>闭包的作用</h3><ol>
+<li>最基本的作用：可以通过闭包返回的函数或者方法，来修改函数内部的数据</li>
+<li>创建一个私有的空间，保护数据,外部想要访问数据，只能通过函数提供的方法</li>
+<li>在提供的方法中，我们可以设置一些校验逻辑，让数据变得更加安全</li>
+</ol>
+<h3 id="作用域分段-两个script互不影响"><a href="#作用域分段-两个script互不影响" class="headerlink" title="作用域分段(两个script互不影响)"></a>作用域分段(两个script互不影响)</h3><h3 id="条件函数的声明"><a href="#条件函数的声明" class="headerlink" title="条件函数的声明"></a>条件函数的声明</h3><ul>
+<li>条件式函数声明是否会被提升，取决浏览器</li>
+<li>不推荐去写</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">foo(); //这里会报错，因为未被提升</div><div class="line"></div><div class="line">      if(true)&#123;</div><div class="line">          function foo()&#123;</div><div class="line">              console.log(&quot;123&quot;);</div><div class="line">          &#125;</div><div class="line">      &#125;</div></pre></td></tr></table></figure>
+<h3 id="缓存"><a href="#缓存" class="headerlink" title="缓存"></a>缓存</h3><p>cache<br>缓存的作用，就是将一些常用的数据，存储起来，提供使用，提升性<br>CDN Content Delivery Network</p>
+<p>数据库  高并发<br>非关系型数据库（内存型数据库） MongoDB  Redis</p>
+<p>网站静态页面缓存机制<br>将网页静态化，存储在服务器端</p>
+<h3 id="沙箱模式"><a href="#沙箱模式" class="headerlink" title="沙箱模式"></a>沙箱模式</h3><ul>
+<li>沙箱<br>  与外界隔绝的一个环境,外界无法修改该环境内任何信息,沙箱内的东西单独属于一个世界</li>
+<li>360沙箱模式<br>  将软件和操作系统进行隔离,以达到安全的目的<blockquote>
+<p>苹果手机的app使用的就是沙箱模式去运行,隔离app空间,每个app独立运行</p>
+</blockquote>
+</li>
+<li><p>沙箱模式结构</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">(function()&#123;</div><div class="line">//在沙箱中将所有的变量的定义放在最上方</div><div class="line">//中间就放一些逻辑代码</div><div class="line">//最后,如果需要,就给外界暴露一些成员(通过window)</div><div class="line">	</div><div class="line">&#125;)();</div></pre></td></tr></table></figure>
+</li>
+<li><p>为什么使用立即执行函数表达式(IIFE)<br>  因为IIFE不会在外界暴露任何的全局变量,但是又可以形成一个封闭的空间<br>  刚好可以实现沙箱模式</p>
+</li>
+<li><p>jQuery中的沙箱模式<br>  如果需要在外界暴露一些属性或者方法,就可以将这些属性和方法,加到window全局对象上去<br>  但是window全局对象不可以直接引用,因为直接引用会破坏沙箱模式<br>  所以我们选择使用传参的形式将window对象,传入沙箱内<br>  此时沙箱内使用window对象的时候，不会再去全局搜索window对象<br>  而使用的就是沙箱内部定义的形参</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">(function(w)&#123;</div><div class="line"></div><div class="line">	var init=&#123;</div><div class="line">		getEle:function()&#123;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	w.init=w.$.init;</div><div class="line">&#125;(window));</div></pre></td></tr></table></figure>
+</li>
+<li><p>沙箱模式应用<br>  沙箱模式一般应用于书写第三方框架<br>  或者为第三方框架书写插件<br>  或者书写功能独立的一些组件</p>
+</li>
+<li><p>沙箱模式的优势</p>
+</li>
+</ul>
+<ol>
+<li>沙箱模式使用的是IIFE,不会在外界暴露任何的全局变量,也不会造成全局变量污染</li>
+<li>沙箱中的所有数据,都是和外界完全隔离,外界无法对其进行修改,也就保证了代码的安全性</li>
+</ol>
+<ul>
+<li>js中沙箱模式的实现原理<br>  函数可以构建作用域,上级作用域不能直接访问下级作用域中的数据</li>
+</ul>
+<h3 id="函数的四种调用模式"><a href="#函数的四种调用模式" class="headerlink" title="函数的四种调用模式"></a>函数的四种调用模式</h3><ol>
+<li><p>函数模式<br> this指向window全局对象</p>
+</li>
+<li><p>方法模式<br> this指向调用这个方法的对象</p>
+</li>
+<li><p>构造函数模式</p>
+<ul>
+<li>this指向new创建出来的对象</li>
+<li>简单工厂模式的构造函数,创建出来的对象跟该构造函数无关,实际调用模式是函数模式</li>
+</ul>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">function Person(name,age)&#123;</div><div class="line">	var o=&#123;</div><div class="line">		name:name,</div><div class="line">		age:age,</div><div class="line">		sayhello:function ()&#123;</div><div class="line">		&#125;</div><div class="line">	&#125;;</div><div class="line">	return  o;</div><div class="line">&#125;</div><div class="line"></div><div class="line">var p=Person(&quot;zs&quot;,18);</div><div class="line">console.log(p);</div></pre></td></tr></table></figure>
+<ul>
+<li>寄生式构造函数</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">function Person(name,age)&#123;</div><div class="line">	var o=&#123;</div><div class="line">		name:name,</div><div class="line">		age:age,</div><div class="line">		sayhello:function ()&#123;</div><div class="line">		&#125;</div><div class="line">	&#125;;</div><div class="line">	return  o;</div><div class="line">&#125;</div><div class="line">var  p=new Person();</div></pre></td></tr></table></figure>
+<ol>
+<li><p>上下文模式<br> 在上下文调用模式中,可以修改this的值,也就是可以修改函数的调用方法<br> 使用如下两个方法,可以修改函数调用上下文,也就是this的值</p>
+<ul>
+<li>apply<br>api文档中的语法语句中 [] 代表括起来的东西可有可无<br>函数.apply(对象,函数需要参数列表,是一个数组)</li>
+<li><p>call<br>函数.call(对象,arg1,arg2,arg3….)</p>
+</li>
+<li><p>注意点:<br>当使用call和apply传入的第一个参数为值类型的时候,会将值类型转换成对应的对象（引用类型） 然后赋值给this<br>当传入的第一个参数为 null或者Undefined的时候,会把this赋值为  window</p>
+</li>
+<li><p>实例</p>
+</li>
+</ul>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">//1. 求一个数组中的最大值</div><div class="line">var arr=[9,1,10,3];</div><div class="line">var max=Math.max.apply(null,arr);</div><div class="line">//第一个参数传递null的时候,表示为函数调用模式</div><div class="line">console.log(max);</div><div class="line"></div><div class="line">//2.将传入的参数打印，参数之间用-相互连接</div><div class="line">function fn()&#123;</div><div class="line">	</div><div class="line">	var  str=[].join.apply(arguments,&quot;-&quot;);</div><div class="line">	return str;</div><div class="line">	</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
       
     </div>
 
@@ -306,6 +717,16 @@
     </div>
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/JavaScript/" rel="tag">#JavaScript</a>
+          
+            <a href="/tags/面向对象/" rel="tag">#面向对象</a>
+          
+            <a href="/tags/Function/" rel="tag">#Function</a>
+          
+        </div>
       
 
       
@@ -364,7 +785,7 @@
       <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="https://avatars3.githubusercontent.com/u/23217153?v=3&s=466"
+               src="/images/tx.jpg"
                alt="gcz" />
           <p class="site-author-name" itemprop="name">gcz</p>
           <p class="site-description motion-element" itemprop="description"></p>
@@ -378,7 +799,21 @@
           </div>
 
           
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
 
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
           
 
         </nav>
@@ -394,6 +829,24 @@
                     <i class="fa fa-fw fa-github"></i>
                   
                   GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
                 </a>
               </span>
             
@@ -415,7 +868,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#关于如何创建hexo"><span class="nav-text">关于如何创建hexo</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#JavaScript"><span class="nav-text">JavaScript</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#JavaScript包含三大部分"><span class="nav-text">JavaScript包含三大部分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Javascript的数据类型"><span class="nav-text">Javascript的数据类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#全等和等于的区别"><span class="nav-text">全等和等于的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#in关键字"><span class="nav-text">in关键字</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何判断数组中是否存在指定的值"><span class="nav-text">如何判断数组中是否存在指定的值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#值类型和引用类型"><span class="nav-text">值类型和引用类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#值类型和引用类型的特征"><span class="nav-text">值类型和引用类型的特征</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#引用类型和值类型在函数中的使用"><span class="nav-text">引用类型和值类型在函数中的使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#对象的动态特性"><span class="nav-text">对象的动态特性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#逻辑中断-短路运算"><span class="nav-text">逻辑中断(短路运算)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#delete关键字"><span class="nav-text">delete关键字</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#异常处理"><span class="nav-text">异常处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#面向对象"><span class="nav-text">面向对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#对象"><span class="nav-text">对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#函数封装"><span class="nav-text">函数封装</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#面向对象-1"><span class="nav-text">面向对象</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#面向对象的三大特性"><span class="nav-text">面向对象的三大特性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建对象的方式"><span class="nav-text">创建对象的方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义构造函数"><span class="nav-text">自定义构造函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#构造函数的执行过程"><span class="nav-text">构造函数的执行过程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#构造函数的返回值"><span class="nav-text">构造函数的返回值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#传统构造函数存在的问题"><span class="nav-text">传统构造函数存在的问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#原型"><span class="nav-text">原型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#原型的作用"><span class="nav-text">原型的作用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#访问构造函数的原型"><span class="nav-text">访问构造函数的原型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用原型解决传统构造函数存在的问题"><span class="nav-text">使用原型解决传统构造函数存在的问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#原型的使用方法"><span class="nav-text">原型的使用方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#原型使用的注意事项"><span class="nav-text">原型使用的注意事项</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#继承的实现方式"><span class="nav-text">继承的实现方式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#原型继承"><span class="nav-text">原型继承</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#经典继承"><span class="nav-text">经典继承</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#原型链结构"><span class="nav-text">原型链结构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#属性搜索原则："><span class="nav-text">属性搜索原则：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Object-prototype的成员"><span class="nav-text">Object.prototype的成员</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Function"><span class="nav-text">Function</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建函数的几种方式"><span class="nav-text">创建函数的几种方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Function的使用"><span class="nav-text">Function的使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#arguments的使用"><span class="nav-text">arguments的使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#eval-不推荐使用"><span class="nav-text">eval(不推荐使用)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#静态成员和实例成员"><span class="nav-text">静态成员和实例成员</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#instanceof-关键字"><span class="nav-text">instanceof 关键字</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Function的原型链"><span class="nav-text">Function的原型链</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Object和Function的关系"><span class="nav-text">Object和Function的关系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#递归"><span class="nav-text">递归</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#作用域"><span class="nav-text">作用域</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#变量起作用的范围就是变量的作用域"><span class="nav-text">变量起作用的范围就是变量的作用域</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#变量函数名提升"><span class="nav-text">变量函数名提升</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#js代码的执行分为两个步骤"><span class="nav-text">js代码的执行分为两个步骤</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#作用域链"><span class="nav-text">作用域链</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#变量的搜索原则"><span class="nav-text">变量的搜索原则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#闭包"><span class="nav-text">闭包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#闭包的作用"><span class="nav-text">闭包的作用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#作用域分段-两个script互不影响"><span class="nav-text">作用域分段(两个script互不影响)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#条件函数的声明"><span class="nav-text">条件函数的声明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#缓存"><span class="nav-text">缓存</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#沙箱模式"><span class="nav-text">沙箱模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#函数的四种调用模式"><span class="nav-text">函数的四种调用模式</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
