@@ -1,0 +1,751 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Manda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="ajax," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/face.ico?v=5.0.2" />
+
+
+
+
+
+
+<meta name="description" content="&amp;#x7011;&amp;#x5E03;&amp;#x6D41;&amp;#x5E03;&amp;#x5C40;
+&amp;#x6838;&amp;#x5FC3;
+
+
+&amp;#x5BBD;&amp;#x5EA6;&amp;#x4E00;&amp;#x81F4;,&amp;#x9AD8;&amp;#x5EA6;&amp;#x53C2;&amp;#x5DEE;&amp;#x4E0D;&amp;#x9F50;
+&amp;#x65B0;&amp;#x589E;&amp;#x884C;&amp;#x7684;&amp;#x5185;&amp;#x5BB9;,&amp;#x4F18;&amp;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="瀑布流布局">
+<meta property="og:url" content="http://yoursite.com/2016/07/20/waterFall/index.html">
+<meta property="og:site_name" content="itmebk">
+<meta property="og:description" content="&amp;#x7011;&amp;#x5E03;&amp;#x6D41;&amp;#x5E03;&amp;#x5C40;
+&amp;#x6838;&amp;#x5FC3;
+
+
+&amp;#x5BBD;&amp;#x5EA6;&amp;#x4E00;&amp;#x81F4;,&amp;#x9AD8;&amp;#x5EA6;&amp;#x53C2;&amp;#x5DEE;&amp;#x4E0D;&amp;#x9F50;
+&amp;#x65B0;&amp;#x589E;&amp;#x884C;&amp;#x7684;&amp;#x5185;&amp;#x5BB9;,&amp;#x4F18;&amp;">
+<meta property="og:updated_time" content="2016-11-17T13:46:08.617Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="瀑布流布局">
+<meta name="twitter:description" content="&amp;#x7011;&amp;#x5E03;&amp;#x6D41;&amp;#x5E03;&amp;#x5C40;
+&amp;#x6838;&amp;#x5FC3;
+
+
+&amp;#x5BBD;&amp;#x5EA6;&amp;#x4E00;&amp;#x81F4;,&amp;#x9AD8;&amp;#x5EA6;&amp;#x53C2;&amp;#x5DEE;&amp;#x4E0D;&amp;#x9F50;
+&amp;#x65B0;&amp;#x589E;&amp;#x884C;&amp;#x7684;&amp;#x5185;&amp;#x5BB9;,&amp;#x4F18;&amp;">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '375cd933374e16cb4f9d27940771c7b3',
+      author: 'gcz'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/07/20/waterFall/"/>
+
+
+  <title> 瀑布流布局 | itmebk </title>
+</head>
+
+<body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">itmebk</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                瀑布流布局
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-07-20T21:37:17+08:00" content="2016-07-20">
+              2016-07-20
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/ajax/" itemprop="url" rel="index">
+                    <span itemprop="name">ajax</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/07/20/waterFall/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/20/waterFall/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="&#x7011;&#x5E03;&#x6D41;&#x5E03;&#x5C40;"><a href="#&#x7011;&#x5E03;&#x6D41;&#x5E03;&#x5C40;" class="headerlink" title="&#x7011;&#x5E03;&#x6D41;&#x5E03;&#x5C40;"></a>&#x7011;&#x5E03;&#x6D41;&#x5E03;&#x5C40;</h3><blockquote>
+<p>&#x6838;&#x5FC3;</p>
+</blockquote>
+<ol>
+<li><code>&#x5BBD;&#x5EA6;</code>&#x4E00;&#x81F4;,<code>&#x9AD8;&#x5EA6;</code>&#x53C2;&#x5DEE;&#x4E0D;&#x9F50;</li>
+<li>&#x65B0;&#x589E;&#x884C;&#x7684;&#x5185;&#x5BB9;,&#x4F18;&#x5148;&#x6DFB;&#x52A0;&#x5230;<code>&#x6700;&#x77EE;</code>&#x7684;&#x4E0B;&#x65B9;</li>
+</ol>
+<blockquote>
+<p>&#x5B9E;&#x73B0;&#x601D;&#x8DEF;:</p>
+</blockquote>
+<ol>
+<li>&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;,&#x5C06;&#x4E00;&#x884C;&#x663E;&#x793A;&#x7684;&#x5143;&#x7D20;&#x7684;&#x9AD8;&#x5EA6;&#x4FDD;&#x5B58;</li>
+<li>&#x904D;&#x5386;&#x8FD9;&#x4E2A;&#x6570;&#x7EC4;,&#x627E;&#x51FA;&#x6700;&#x5C0F;&#x7684;&#x9AD8;&#x5EA6;,&#x7136;&#x540E;&#x5C06;&#x65B0;&#x7684;&#x5143;&#x7D20;&#x6DFB;&#x52A0;&#x5230;&#x90A3;&#x91CC;</li>
+<li>&#x66FF;&#x6362;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6570;&#x636E;</li>
+</ol>
+<blockquote>
+<p>&#x5C01;&#x88C5;&#x7684;jQuery&#x63D2;&#x4EF6;</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div></pre></td><td class="code"><pre><div class="line">$.fn.extend({</div><div class="line">	waterFall:function(){</div><div class="line"></div><div class="line">	//&#x9700;&#x8981;&#x83B7;&#x53D6;&#x7684;&#x4E00;&#x4E9B;&#x6570;&#x636E;,&#x6839;&#x636E;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x83B7;&#x53D6;</div><div class="line">	/*</div><div class="line">	* totalWidth &#x7236;&#x76D2;&#x5B50;&#x7684;&#x5BBD;&#x5EA6;</div><div class="line">	* itemWidth  &#x5B50;&#x5143;&#x7D20;&#x7684;&#x5BBD;&#x5EA6;</div><div class="line">	* colNum	 &#x4E00;&#x884C;&#x663E;&#x793A;&#x7684;&#x5143;&#x7D20;&#x4E2A;&#x6570;</div><div class="line">	* margin	 &#x5143;&#x7D20;&#x4E4B;&#x95F4;&#x7684;&#x95F4;&#x8DDD;</div><div class="line">	 */</div><div class="line">	</div><div class="line">	var  totalWidth = $(&apos;.items&apos;).width();</div><div class="line">	var  itemWidth = $(&apos;.items&apos;).children(&apos;.item&apos;).width();</div><div class="line">	var  colNum=Math.floor(totalWidth/itemWidth);</div><div class="line">	var  margin=(totalWidth-itemWidth*colNum)/(colNum-1);</div><div class="line"></div><div class="line">	$_this=this;</div><div class="line">	$_this.on(&quot;click&quot;,function(){</div><div class="line"></div><div class="line">			//&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;</div><div class="line">			var heightArr=[];</div><div class="line">			//&#x521D;&#x59CB;&#x5316;&#x6570;&#x7EC4;</div><div class="line">			for(var i=0;i&lt;colNum;i++){</div><div class="line">				heightArr[i]=margin;</div><div class="line">			}</div><div class="line">			$(&apos;.items&apos;).children(&apos;.item&apos;).each(function(index,ele){</div><div class="line"></div><div class="line">				//&#x5F53;&#x524D;&#x5143;&#x7D20;&#x7684;&#x9AD8;&#x5EA6;</div><div class="line">				var currentHeight=$(ele).height();</div><div class="line">				var minHeight=heightArr[0];</div><div class="line">				var minIndex=0;</div><div class="line">				for(var i=0;i&lt;heightArr.length;i++){</div><div class="line">					if(heightArr[i]&lt;minHeight){</div><div class="line">						minHeight=heightArr[i];</div><div class="line">						minIndex=i;</div><div class="line">					}</div><div class="line">				}</div><div class="line"></div><div class="line">				//&#x8BBE;&#x7F6E;&#x6DFB;&#x52A0;&#x5143;&#x7D20;&#x7684;top,left&#x503C;</div><div class="line">				$(ele).css({</div><div class="line">					top: minHeight,</div><div class="line">					left: (itemWidth+margin)*minIndex</div><div class="line">				})</div><div class="line"></div><div class="line">				//&#x66FF;&#x6362;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6570;&#x636E;</div><div class="line">				minHeight+=currentHeight+margin;</div><div class="line">				heightArr[minIndex]=minHeight;</div><div class="line"></div><div class="line">				//&#x8BBE;&#x7F6E;&#x7236;&#x5143;&#x7D20;&#x7684;&#x9AD8;&#x5EA6;</div><div class="line">				var maxHeight = heightArr[0];</div><div class="line">				for(var i = 0;i&lt; heightArr.length;i++){</div><div class="line">					if(heightArr[i]&gt;maxHeight){</div><div class="line">						maxHeight=heightArr[i];</div><div class="line">					}</div><div class="line">				}</div><div class="line">				$_this.height(maxHeight);</div><div class="line">			})</div><div class="line"></div><div class="line">		})</div><div class="line">	}</div><div class="line">})</div></pre></td></tr></table></figure>
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/ajax/" rel="tag">#ajax</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/07/20/artTemplate/" rel="next" title="artTemplate模板引擎">
+                <i class="fa fa-chevron-left"></i> artTemplate模板引擎
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/08/04/my-new-post/" rel="prev" title="面向对象知识点">
+                面向对象知识点 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2016/07/20/waterFall/"
+     data-title="瀑布流布局"
+     data-content=""
+     data-url="http://yoursite.com/2016/07/20/waterFall/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/07/20/waterFall/"
+           data-title="瀑布流布局" data-url="http://yoursite.com/2016/07/20/waterFall/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/tx.jpg"
+               alt="gcz" />
+          <p class="site-author-name" itemprop="name">gcz</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">14</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/gczstudio" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#瀑布流布局"><span class="nav-text">瀑布流布局</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">gcz</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.2"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"gczstudio"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+
+</body>
+</html>
